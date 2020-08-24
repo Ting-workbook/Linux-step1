@@ -1,1 +1,55 @@
 
+
+操作系统分类：桌面（Windows、MacOS）、服务器（一般没有操作界面,Linux（也有别的），安全性高，开放性的权限少）、手机（Android（基于Linux的）、iOS）、嵌入式（Linux，智能家具，机顶盒...）
+
+
+
+学习那些内容：
+    学习各种命令（熟练的命令和参数只有几个，其余不需要记住，用的时候直接差）
+
+
+Linux和Windows的区别
+    Windows下游盘符
+    Linux没有盘符的概念，只有一个根目录，不同的目录存放不同的东西
+    Linux各个目录以及每个目录的作用介绍，参考：http://www.cnblogs.com/duanji/p/yueding2.html
+    如果加了新的硬盘，将新的硬盘挂载到已有文件夹下面
+
+
+
+
+
+终端命令
+1、当前所处目录
+   pwd + 回车   --->  /home/siki
+2、列出当前路径下所有的文件
+   ls + 回车   --->   Desktop  Downloads  Music  Public  Videos  examples.desktop
+   以列表的形式显示当前路径下所有文件
+   ls -l + 回车   --->   drwxr-xr-x 3 siki siki 4096 Jan  4 19:49 Desktop
+                         drwxr-xr-x 2 siki siki 4096 Jan  3 02:14 Downloads
+                         -rw-r--r-- 1 siki siki 4096 Jan  3 02:00 examples.desktop
+                         drwxr-xr-x 2 siki siki 4096 Jan  3 02:14 Music
+                         drwxr-xr-x 2 siki siki 4096 Jan  3 02:14 Public
+                         drwxr-xr-x 2 siki siki 4096 Jan  3 02:14 Videos
+   显示当前路径下隐藏文件夹（最终结果是显示所有文件）
+   ls -a + 回车   --->   
+   以列表的形式显示当前类路径下所有文件
+   ls -l -a + 回车   --->   
+3、打开Desktop文件夹（路径）
+   cd Desktop + 回车   --->
+   打开Desktop下的aa文件夹（路径）
+   cd Desktop/aa   --->
+4、打开上一级路径
+   cd .. + 回车   --->  
+5、回到家目录
+   cd - + 回车   --->
+6、
+
+快捷键
+1、tab键：输入一部分单词之后可以自动补全
+2、上下方向键：取得历史命令
+
+
+
+
+
+
