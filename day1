@@ -18,15 +18,16 @@ Linux和Windows的区别
 
 
 
-终端命令
+终端常用命令
 1、当前所处目录
    pwd + 回车   --->  /home/siki
 2、列出当前路径下所有的文件
    ls + 回车   --->   Desktop  Downloads  Music  Public  Videos  examples.desktop
    以列表的形式显示当前路径下所有文件
-   ls -l + 回车   --->   drwxr-xr-x 3 siki siki 4096 Jan  4 19:49 Desktop
+   ls -l + 回车   --->   total 32
+                         drwxr-xr-x 3 siki siki 4096 Jan  4 19:49 Desktop
                          drwxr-xr-x 2 siki siki 4096 Jan  3 02:14 Downloads
-                         -rw-r--r-- 1 siki siki 4096 Jan  3 02:00 examples.desktop
+                         -rw-r--r-- 1 siki siki 8980 Jan  3 02:00 examples.desktop
                          drwxr-xr-x 2 siki siki 4096 Jan  3 02:14 Music
                          drwxr-xr-x 2 siki siki 4096 Jan  3 02:14 Public
                          drwxr-xr-x 2 siki siki 4096 Jan  3 02:14 Videos
@@ -34,7 +35,27 @@ Linux和Windows的区别
    ls -a + 回车   --->   
    以列表的形式显示当前类路径下所有文件
    ls -l -a + 回车   --->   
-3、打开Desktop文件夹（路径）
+   以列表的形式，以k的单位显示大小显示当前路径下的文件
+   ls -l -h + 回车   --->   total 32k
+                            drwxr-xr-x 3 siki siki 4.0k Jan  4 19:49 Desktop
+                            drwxr-xr-x 2 siki siki 4.0k Jan  3 02:14 Downloads
+                            -rw-r--r-- 1 siki siki 8.8k Jan  3 02:00 examples.desktop
+                            drwxr-xr-x 2 siki siki 4.0k Jan  3 02:14 Music
+                            drwxr-xr-x 2 siki siki 4.0k Jan  3 02:14 Public
+                            drwxr-xr-x 2 siki siki 4.0k Jan  3 02:14 Videos
+   ls-lha + 回车   --->   total 96k
+                          drwxr-xr-x 16 siki siki 4.0k Jan  4 19:33 .
+                          drwxr-xr-x  3 siki siki 4.0k Jan  3 02:00 ..
+                          -rw-------  1 siki siki  490 Jan  4 19:33 .bash_history
+                          drwxr-xr-x  3 siki siki 4.0k Jan  4 19:49 Desktop
+                          drwxr-xr-x  2 siki siki 4.0k Jan  3 02:14 Downloads
+                          -rw-r--r--  1 siki siki 8.8k Jan  3 02:00 examples.desktop
+                          drwxr-xr-x  2 siki siki 4.0k Jan  3 02:14 Music
+                          drwxr-xr-x  2 siki siki 4.0k Jan  3 02:14 Public
+                          drwxr-xr-x  2 siki siki 4.0k Jan  3 02:14 Videos
+   以上也可以写成和拓展：ls -lh    ls -la   ls-lha
+   ubuntu里创建隐藏文件/文件夹只需要在文件名前面加“.”
+3、打开Desktop文件夹（路径）  
    cd Desktop + 回车   --->
    打开Desktop下的aa文件夹（路径）
    cd Desktop/aa   --->
@@ -42,7 +63,35 @@ Linux和Windows的区别
    cd .. + 回车   --->  
 5、回到家目录
    cd - + 回车   --->
-6、
+6、清理屏幕
+   clear + 回车   --->   
+
+
+通配符
+1、*   代表任意多个字符
+   列出当前文件夹下以“.txt”为后缀的文件
+   ls *.txt + 回车   --->   
+   列出当前文件夹下以“1”开头的文件
+   ls 1* + 回车   --->   
+   列出当前文件夹下以“1”开头，后缀是“.odt”的文件
+   ls 1*.odt + 回车   --->   
+2、?   代表一个字符
+   列出当前文件夹下有两个字符的文件
+   ls ?? + 回车   ---> 
+   列出当前文件夹下有三个字符，后缀是“.odt”的文件
+   ls ???.odt + 回车   ---> 
+3、[]   代表中括号里字符中的任意一个
+   列出当前文件夹下第一个字符是“1234”中任意一个，第二三个字符是“23”，后缀是“.odt”的文件
+   ls [1234]23.odt + 回车   ---> 
+   ls [1-4]23.odt + 回车   ---> 
+   列出当前文件夹下有三个字符，每个字符都是从“1234”中任选一个，后缀是“.odt”的文件
+   ls [1234][1234][1234].odt + 回车   ---> 
+   ls [1-4][1-4][1-4].odt + 回车   ---> 
+   列出当前文件夹下第一个字符是“ab34”中任意一个，第二三个字符是“23”，后缀是“.odt”的文件
+   ls [ab34]23.odt + 回车   ---> 
+   列出当前文件夹下第一个字符是“a”至“z”中任意一个，第二三个字符是“23”，后缀是“.odt”的文件
+   ls [a-z]23.odt + 回车   ---> 
+   
 
 快捷键
 1、tab键：输入一部分单词之后可以自动补全
