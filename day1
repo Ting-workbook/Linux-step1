@@ -80,8 +80,8 @@ Linux和Windows的区别
 6、移除文件“123.odt”
    rm 123.odt   --->
    移除目录“bb”
-   rm -d bb   --->
-   rm -r bb   --->
+   rm -d bb   --->   (移除的文件夹是空的)
+   rm -r bb   --->   （移除的文件夹里有内容）
    移除隐藏文件“test2.txt”
    rm .test2.txt   --->
 7、将文件“test.txt”移动到目录“aa”下 
@@ -135,7 +135,8 @@ Linux和Windows的区别
 1、tab键：输入一部分单词之后可以自动补全
 2、上下方向键：取得历史命令
 3、查看“rm”命令的帮助手册
-   rm --help
+   rm --help   （比较常用）
+   man rm   （比help介绍的多一点）
    
 
 
