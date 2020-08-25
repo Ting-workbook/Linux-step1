@@ -55,15 +55,23 @@ Linux和Windows的区别
                           drwxr-xr-x  2 siki siki 4.0k Jan  3 02:14 Videos
    以上也可以写成和拓展：ls -lh    ls -la   ls-lha
    ubuntu里创建隐藏文件/文件夹只需要在文件名前面加“.”
-3、打开Desktop文件夹（路径）  
+3、打开Desktop文件夹（路径）（注：不能打开文件）  
    cd Desktop + 回车   --->
    打开Desktop下的aa文件夹（路径）
    cd Desktop/aa   --->
-4、打开上一级路径
+   打开当前目录（路径）（相当于没有做什么）
+   cd . + 回车   --->  
+   打开上一级目录（路径）
    cd .. + 回车   --->  
-5、回到家目录
+   打开上一级的上一级目录（路径）
+   cd ../.. + 回车   --->  
+   回到家目录
+   cd ~ + 回车   --->
+   上一个目录和本目录之间来回切换
    cd - + 回车   --->
-6、清理屏幕
+   相对路径和绝对路径 
+   例：cd Desktop/aa（相对路径）   cd /home/siki/Desktop/aa（绝对路径）
+4、清理屏幕
    clear + 回车   --->   
 
 
