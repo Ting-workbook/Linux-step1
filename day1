@@ -71,8 +71,37 @@ Linux和Windows的区别
    cd - + 回车   --->
    相对路径和绝对路径 
    例：cd Desktop/aa（相对路径）   cd /home/siki/Desktop/aa（绝对路径）
-4、清理屏幕
+4、创建文件（不能创建目录）名为“test.txt”
+   touch test.txt   --->
+   创建隐藏文件“test2.txt”
+   touch .test2.txt   --->
+5、创建目录，名为“bb”
+   mkdir bb   --->   
+6、移除文件“123.odt”
+   rm 123.odt   --->
+   移除目录“bb”
+   rm -d bb   --->
+   rm -r bb   --->
+   移除隐藏文件“test2.txt”
+   rm .test2.txt   --->
+7、将文件“test.txt”移动到目录“aa”下 
+   mv test.txt aa   --->   （注：“aa”处于当前目录下）
+   mv test.txt /home/siki/Desktop/aa   ---> 
+   将“bb”文件夹移动到“aa”文件夹下面
+   mv bb aa   --->   
+   将文件“125.odt”移动到当前目录
+   mv 125.odt .   --->
+   将文件“125.odt”移动到当前目录下，并且改名为“126.odt”
+   mv 125.odt ./126.odt   --->
+8、将文件“125.txt”复制到文件夹“aa”下面
+   cp 125.txt aa   --->   
+   将文件“125.txt”复制到文件夹“aa”下面，并改名为“128.txt”
+   cp 125.txt aa/128.txt   --->  
+   将“aa”文件夹下的“bb”复制到当前目录下 
+   cp -r aa/bb .   --->   
+9、清理屏幕
    clear + 回车   --->   
+
 
 
 通配符
@@ -99,11 +128,15 @@ Linux和Windows的区别
    ls [ab34]23.odt + 回车   ---> 
    列出当前文件夹下第一个字符是“a”至“z”中任意一个，第二三个字符是“23”，后缀是“.odt”的文件
    ls [a-z]23.odt + 回车   ---> 
+
    
 
 快捷键
 1、tab键：输入一部分单词之后可以自动补全
 2、上下方向键：取得历史命令
+3、查看“rm”命令的帮助手册
+   rm --help
+   
 
 
 
